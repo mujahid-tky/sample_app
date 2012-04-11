@@ -1,4 +1,7 @@
 SampleApp::Application.routes.draw do
+  get "user/user1"
+  match '/signup', :to => 'user#user1'
+
   # match '/', :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
